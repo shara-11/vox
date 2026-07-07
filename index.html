@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vox — Advanced AI Assistant for Discord</title>
+  <meta name="description" content="Vox is a premium AI assistant for Discord — calm, intelligent, and always ready. Moderation, utilities, study tools, and security in one companion.">
+  <meta name="theme-color" content="#0a0a0c">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vox — Advanced AI Assistant for Discord">
+  <meta property="og:description" content="Built to assist, automate, and evolve. Calm, intelligent, and always ready for the next mission.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts: Space Grotesk (display), Inter (body), IBM Plex Mono (data/utility) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================== CINEMATIC LOADER ===================== -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <svg class="loader-mark" viewBox="0 0 120 40" width="120" height="40">
+        <polyline class="loader-wave" points="0,20 15,20 22,6 30,34 38,20 50,20 58,10 66,30 74,20 120,20" />
+      </svg>
+      <p class="loader-text">VOX <span>INITIALIZING</span></p>
+    </div>
+  </div>
+
+  <!-- ===================== SKIP LINK ===================== -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="site-header" id="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html" class="brand" aria-label="Vox home">
+        <svg class="brand-wave" viewBox="0 0 60 24" width="34" height="14" aria-hidden="true">
+          <polyline points="0,12 8,12 12,3 17,21 22,12 28,12 33,6 38,18 43,12 60,12" />
+        </svg>
+        <span>VOX</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="https://discord.com/oauth2/authorize?client_id=1523940294611959858&permissions=8&integration_type=0&scope=bot+applications.commands" class="nav-cta" target="_blank" rel="noopener noreferrer">Invite Vox</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+      <canvas id="gridCanvas" aria-hidden="true"></canvas>
+      <div class="particles" id="particles" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow reveal">DISCORD INTELLIGENCE SYSTEM</p>
+        <h1 class="hero-title reveal">
+          <span class="hero-title-main">VOX</span>
+        </h1>
+        <svg class="hero-waveform" viewBox="0 0 400 60" preserveAspectRatio="none" aria-hidden="true">
+          <polyline id="heroWave" points="0,30 400,30" />
+        </svg>
+        <p class="hero-sub reveal">Advanced AI Assistant for Discord.</p>
+        <p class="hero-desc reveal">Built to assist, automate, and evolve. Calm, intelligent, and always ready for the next mission.</p>
+
+        <div class="hero-actions reveal">
+          <a href="https://discord.com/oauth2/authorize?client_id=1523940294611959858&permissions=8&integration_type=0&scope=bot+applications.commands" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            <span>Invite Vox</span>
+          </a>
+          <a href="#" class="btn btn-ghost">Documentation</a>
+          <a href="https://discord.gg/snDa7PP2mR" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Support Server</a>
+        </div>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true">
+        <span></span>
+        <p>SCROLL</p>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURES ===================== -->
+    <section class="section" id="features">
+      <div class="container">
+        <p class="eyebrow reveal-up">CAPABILITIES</p>
+        <h2 class="section-title reveal-up">Everything a server needs, none of the noise.</h2>
+        <p class="section-lede reveal-up">Vox runs quietly in the background until the moment it's needed — then responds with precision.</p>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal-up">
+            <div class="feature-icon" aria-hidden="true">🤖</div>
+            <h3>AI Assistant</h3>
+            <p>Context-aware conversation, summarization, and answers — tuned for the flow of a live server, not a chatbot script.</p>
+          </article>
+
+          <article class="feature-card reveal-up">
+            <div class="feature-icon" aria-hidden="true">🛠</div>
+            <h3>Moderation</h3>
+            <p>Automated rule enforcement, warnings, and escalation paths that keep a community civil without heavy-handed policing.</p>
+          </article>
+
+          <article class="feature-card reveal-up">
+            <div class="feature-icon" aria-hidden="true">⚡</div>
+            <h3>Utility Commands</h3>
+            <p>Reminders, polls, role management, and the everyday tools a server reaches for dozens of times a day.</p>
+          </article>
+
+          <article class="feature-card reveal-up">
+            <div class="feature-icon" aria-hidden="true">📚</div>
+            <h3>Study &amp; Productivity</h3>
+            <p>Focus timers, note capture, and study-session tracking built for servers that get real work done together.</p>
+          </article>
+
+          <article class="feature-card reveal-up">
+            <div class="feature-icon" aria-hidden="true">🔒</div>
+            <h3>Security</h3>
+            <p>Anti-raid detection, permission auditing, and verification flows that protect a server without slowing it down.</p>
+          </article>
+
+          <article class="feature-card reveal-up">
+            <div class="feature-icon" aria-hidden="true">🚀</div>
+            <h3>Fast Performance</h3>
+            <p>Sub-second response times on a modern async architecture, built to stay fast as a server scales up.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section section-about" id="about">
+      <div class="container about-grid">
+        <div class="about-copy reveal-up">
+          <p class="eyebrow">ABOUT</p>
+          <h2 class="section-title">Not another bot. A companion.</h2>
+          <p>Vox was designed on a simple premise: a server's assistant should feel less like a command list and more like a presence — one that understands intent, responds with calm precision, and gets out of the way the rest of the time.</p>
+          <p>Under the hood, Vox is written in <strong>Python</strong> on top of <strong>discord.py</strong>, structured around a modern, modular architecture built for reliability at scale. Every subsystem — moderation, utility, AI reasoning — runs independently, so the whole stays fast even as any one part grows.</p>
+          <p>Vox is designed and built by <strong>knife4love</strong>, with a focus on craft over feature-count: fewer commands, done properly, wrapped in an experience that feels premium rather than improvised.</p>
+        </div>
+
+        <div class="about-panel reveal-up" aria-hidden="true">
+          <div class="panel-glass">
+            <div class="panel-row"><span>ENGINE</span><span>Python · discord.py</span></div>
+            <div class="panel-row"><span>ARCHITECTURE</span><span>Modular / Async</span></div>
+            <div class="panel-row"><span>DESIGNER</span><span>knife4love</span></div>
+            <div class="panel-row"><span>STATUS</span><span class="status-dot">Online</span></div>
+            <svg class="panel-wave" viewBox="0 0 300 50" preserveAspectRatio="none">
+              <polyline points="0,25 30,25 40,8 50,42 60,25 90,25 100,14 110,36 120,25 300,25" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== STATS ===================== -->
+    <section class="section section-stats" id="stats">
+      <div class="container">
+        <p class="eyebrow reveal-up">CURRENT STATUS</p>
+        <h2 class="section-title reveal-up">Early days, honestly tracked.</h2>
+
+        <div class="stats-grid">
+          <div class="stat reveal-up">
+            <span class="stat-number" data-target="1" data-suffix="">0</span>
+            <span class="stat-label">Server</span>
+          </div>
+          <div class="stat reveal-up">
+            <span class="stat-number-static">Testing</span>
+            <span class="stat-label">Users</span>
+          </div>
+          <div class="stat reveal-up">
+            <span class="stat-number" data-target="10" data-suffix="+">0</span>
+            <span class="stat-label">Commands Executed</span>
+          </div>
+          <div class="stat reveal-up">
+            <span class="stat-number-static">Development Build</span>
+            <span class="stat-label">Status</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="section" id="faq">
+      <div class="container container-narrow">
+        <p class="eyebrow reveal-up">QUESTIONS</p>
+        <h2 class="section-title reveal-up">Frequently asked</h2>
+
+        <div class="accordion reveal-up">
+          <div class="accordion-item">
+            <h3>
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-1">
+                Is Vox free?
+                <span class="accordion-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faq-1" role="region">
+              <p>Yes. The core Vox experience — AI assistant, moderation, utilities, and security — is free for every server. Optional premium tiers may extend certain limits in the future, but nothing essential is held back.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3>
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-2">
+                Is my data safe?
+                <span class="accordion-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faq-2" role="region">
+              <p>Vox stores only what's required to operate — server settings, moderation logs, and command metadata. Message content isn't retained beyond what's needed to process a request. See the Privacy Policy for full detail.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3>
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-3">
+                How do I invite Vox?
+                <span class="accordion-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faq-3" role="region">
+              <p>Select "Invite Vox" at the top of this page, choose your server, and confirm the requested permissions. Setup takes under a minute — no configuration required to get started.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3>
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-4">
+                Will more features be added?
+                <span class="accordion-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="accordion-panel" id="faq-4" role="region">
+              <p>Continuously. Vox is under active development, with new capabilities shipped on a regular cadence based on direct feedback from the servers that use it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FINAL CTA ===================== -->
+    <section class="section cta-section">
+      <div class="container cta-inner reveal-up">
+        <h2 class="section-title">Ready when you are.</h2>
+        <p>Bring Vox into your server in under a minute.</p>
+        <a href="https://discord.com/oauth2/authorize?client_id=1523940294611959858&permissions=8&integration_type=0&scope=bot+applications.commands" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Invite Vox</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <svg class="brand-wave" viewBox="0 0 60 24" width="30" height="12" aria-hidden="true">
+            <polyline points="0,12 8,12 12,3 17,21 22,12 28,12 33,6 38,18 43,12 60,12" />
+          </svg>
+          <span>VOX</span>
+        </a>
+        <p>Advanced AI assistant for Discord.</p>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="https://discord.gg/snDa7PP2mR" target="_blank" rel="noopener noreferrer">Support</a>
+      </nav>
+
+      <div class="footer-social">
+        <a href="#" aria-label="Vox on GitHub" class="social-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11 11 0 0 1 6 0C17.3 5 18.3 5.3 18.3 5.3c.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5z"/></svg>
+        </a>
+        <a href="https://discord.gg/snDa7PP2mR" aria-label="Vox on Discord" class="social-icon" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20.3 4.4A19.7 19.7 0 0 0 15.4 3c-.2.4-.5.9-.7 1.4a18 18 0 0 0-5.4 0c-.2-.5-.4-1-.7-1.4a19.6 19.6 0 0 0-4.9 1.5C1 8.6.3 12.7.6 16.7a19.8 19.8 0 0 0 5.9 3c.5-.6.9-1.3 1.2-2-.7-.2-1.3-.6-1.9-1 .2-.1.3-.3.5-.4 3.6 1.7 7.6 1.7 11.2 0 .1.1.3.3.5.4-.6.4-1.2.7-1.9 1 .3.7.7 1.4 1.2 2 2.3-.7 4.4-1.7 5.9-3 .4-4.6-.8-8.6-3.4-12.3zM9 14.6c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2zm6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.8 2.2-1.9 2.2z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Vox. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
