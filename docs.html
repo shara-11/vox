@@ -1,300 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Documentation — Vox</title>
-  <meta name="description" content="Documentation for Vox, the AI assistant for Discord — setup, commands, permissions, and roadmap.">
-  <meta name="theme-color" content="#0a0a0c">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vox Documentation</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="brand"><span>VOX</span></a>
 
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header" id="site-header">
-    <nav class="nav" aria-label="Primary">
-      <a href="index.html" class="brand" aria-label="Vox home">
-        <svg class="brand-wave" viewBox="0 0 60 24" width="34" height="14" aria-hidden="true">
-          <polyline points="0,12 8,12 12,3 17,21 22,12 28,12 33,6 38,18 43,12 60,12" />
-        </svg>
-        <span>VOX</span>
-      </a>
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-menu" id="navMenu">
+      <ul class="nav-menu">
         <li><a href="index.html#home">Home</a></li>
         <li><a href="index.html#features">Features</a></li>
         <li><a href="index.html#about">About</a></li>
         <li><a href="index.html#faq">FAQ</a></li>
-        <li><a href="https://discord.com/oauth2/authorize?client_id=1523940294611959858&permissions=8&integration_type=0&scope=bot+applications.commands" class="nav-cta" target="_blank" rel="noopener noreferrer">Invite Vox</a></li>
+        <li><a href="docs.html">Docs</a></li>
+        <li>
+          <a class="nav-cta" target="_blank" rel="noopener noreferrer"
+             href="https://discord.com/oauth2/authorize?client_id=1523940294611959858&permissions=8&integration_type=0&scope=bot+applications.commands">
+            Invite Vox
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
 
   <main id="main">
-
-    <!-- ===================== PAGE HERO ===================== -->
-    <section class="legal-hero">
+    <section class="section">
       <div class="container container-narrow">
-        <p class="eyebrow">DOCUMENTATION</p>
-        <h1>Vox Docs</h1>
-        <p class="updated">EVERYTHING NEEDED TO SET UP AND RUN VOX</p>
-      </div>
-    </section>
+        <p class="eyebrow reveal-up">DOCUMENTATION</p>
+        <h1 class="section-title reveal-up">Vox Command Manual</h1>
+        <p class="section-lede reveal-up">
+          Learn how to invite Vox, use commands, manage permissions, and follow upcoming features.
+        </p>
 
-    <!-- ===================== WELCOME ===================== -->
-    <section class="legal-body" style="padding-bottom: 0;">
-      <div class="container container-narrow">
-        <div class="legal-section reveal-up">
+        <article class="feature-card reveal-up">
           <h2>Welcome</h2>
-          <p>Vox is an advanced, AI-powered assistant built for Discord — designed to assist, automate, and evolve alongside the servers that use it. This page covers everything needed to get Vox running in a server, from initial setup to the full command reference.</p>
-        </div>
+          <p>
+            Vox is an advanced AI-powered Discord assistant built to assist, automate,
+            and evolve. It is designed for clean interactions, useful commands, and a
+            premium server experience.
+          </p>
+        </article>
+
+        <article class="feature-card reveal-up">
+          <h2>Getting Started</h2>
+          <p>1. Invite Vox using the Invite button.</p>
+          <p>2. Select a Discord server where you have Manage Server permission.</p>
+          <p>3. Authorize Vox.</p>
+          <p>4. Type <strong>/help</strong> to view commands.</p>
+        </article>
+
+        <article class="feature-card reveal-up">
+          <h2>Commands</h2>
+
+          <h3>Utility</h3>
+          <p><strong>/ping</strong> — Displays Vox’s latency.</p>
+          <p><strong>/help</strong> — Shows available commands.</p>
+          <p><strong>/about</strong> — Shows information about Vox.</p>
+
+          <h3>Information</h3>
+          <p><strong>/userinfo</strong> — Displays information about a Discord user.</p>
+          <p><strong>/serverinfo</strong> — Displays information about the current server.</p>
+
+          <h3>Communication</h3>
+          <p><strong>/say</strong> — Sends a message through Vox using an embed.</p>
+        </article>
+
+        <article class="feature-card reveal-up">
+          <h2>Permissions</h2>
+          <p>Vox may need these permissions:</p>
+          <p>• Send Messages</p>
+          <p>• Use Slash Commands</p>
+          <p>• Embed Links</p>
+          <p>• Read Message History</p>
+          <p>• View Channels</p>
+        </article>
+
+        <article class="feature-card reveal-up">
+          <h2>Roadmap</h2>
+          <h3>Version 1.0</h3>
+          <p>Slash commands, help, about, user info, server info, and say command.</p>
+
+          <h3>Coming Soon</h3>
+          <p>AI Assistant, moderation, reminders, polls, dashboard, and study tools.</p>
+        </article>
+
+        <article class="feature-card reveal-up">
+          <h2>FAQ</h2>
+          <p><strong>Is Vox free?</strong><br />Yes, Vox is currently free.</p>
+          <p><strong>How do I report bugs?</strong><br />Join the support server.</p>
+          <p><strong>Will more commands be added?</strong><br />Yes, Vox is actively being developed.</p>
+          <p><strong>Is my data stored?</strong><br />Vox only uses the minimum data needed for its features.</p>
+        </article>
+
+        <article class="feature-card reveal-up">
+          <h2>Support</h2>
+          <p>Support Server:</p>
+          <p>
+            <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/snDa7PP2mR">
+              https://discord.gg/snDa7PP2mR
+            </a>
+          </p>
+          <p>Developer: <strong>knife4love</strong></p>
+        </article>
+
+        <p class="eyebrow reveal-up">VOX // SYSTEMS OPERATIONAL</p>
       </div>
     </section>
-
-    <!-- ===================== GETTING STARTED ===================== -->
-    <section class="section">
-      <div class="container container-narrow">
-        <p class="eyebrow reveal-up">SETUP</p>
-        <h2 class="section-title reveal-up">Getting started</h2>
-        <p class="section-lede reveal-up">Vox takes under a minute to set up. No configuration is required to begin.</p>
-
-        <div class="legal-section reveal-up">
-          <h2>1. Invite Vox</h2>
-          <p>Use the <a href="https://discord.com/oauth2/authorize?client_id=1523940294611959858&permissions=8&integration_type=0&scope=bot+applications.commands" target="_blank" rel="noopener noreferrer">Invite Vox</a> link at the top of this page, or the button on the homepage, to open Discord's authorization screen.</p>
-        </div>
-
-        <div class="legal-section reveal-up">
-          <h2>2. Add Vox to a server</h2>
-          <p>Select the server you'd like to add Vox to from the dropdown, review the requested permissions, and confirm. You'll need the "Manage Server" permission on the target server to complete this step.</p>
-        </div>
-
-        <div class="legal-section reveal-up">
-          <h2>3. Use /help</h2>
-          <p>Once Vox has joined, type <code>/help</code> in any channel it can see. This brings up the full list of available commands, grouped by category, directly inside Discord.</p>
-        </div>
-
-        <div class="legal-section reveal-up">
-          <h2>4. Begin using commands</h2>
-          <p>Vox's commands are all slash commands — type <code>/</code> in the message box and select Vox from the list to see suggestions as you type. No prefixes or special syntax to memorize.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== COMMANDS ===================== -->
-    <section class="section section-about">
-      <div class="container">
-        <p class="eyebrow reveal-up">REFERENCE</p>
-        <h2 class="section-title reveal-up">Commands</h2>
-        <p class="section-lede reveal-up">The current command set, grouped by category. New commands are added as Vox develops.</p>
-
-        <div class="feature-grid">
-          <article class="feature-card reveal-up">
-            <h3>Utility</h3>
-            <ul>
-              <li><p><code>/ping</code> — Displays the bot latency.</p></li>
-              <li><p><code>/help</code> — Displays all available commands.</p></li>
-              <li><p><code>/about</code> — Information about Vox.</p></li>
-            </ul>
-          </article>
-
-          <article class="feature-card reveal-up">
-            <h3>Information</h3>
-            <ul>
-              <li><p><code>/userinfo</code> — Displays information about a Discord user.</p></li>
-              <li><p><code>/serverinfo</code> — Displays information about the current server.</p></li>
-            </ul>
-          </article>
-
-          <article class="feature-card reveal-up">
-            <h3>Communication</h3>
-            <ul>
-              <li><p><code>/say</code> — Sends a message through Vox using an embed.</p></li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== PERMISSIONS ===================== -->
-    <section class="section">
-      <div class="container container-narrow">
-        <p class="eyebrow reveal-up">SETUP</p>
-        <h2 class="section-title reveal-up">Permissions</h2>
-        <div class="legal-section reveal-up">
-          <p>To function correctly, Vox requires the following permissions when invited to a server:</p>
-          <ul>
-            <li>Send Messages</li>
-            <li>Use Slash Commands</li>
-            <li>Embed Links</li>
-            <li>Read Message History</li>
-            <li>View Channels</li>
-          </ul>
-          <p>These permissions are requested automatically as part of the invite link — no manual configuration is needed.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== ROADMAP ===================== -->
-    <section class="section section-about">
-      <div class="container about-grid">
-        <div class="about-copy reveal-up">
-          <p class="eyebrow">DEVELOPMENT</p>
-          <h2 class="section-title">Roadmap</h2>
-          <p>Vox is under active, ongoing development. Version 1.0 covers the core command set; everything beyond that is being built and tested in stages.</p>
-        </div>
-
-        <div class="about-panel reveal-up">
-          <div class="panel-glass">
-            <div class="panel-row"><span>VERSION 1.0</span><span class="status-dot">Shipped</span></div>
-            <div class="panel-row"><span>Slash Commands</span><span>Live</span></div>
-            <div class="panel-row"><span>Help</span><span>Live</span></div>
-            <div class="panel-row"><span>About</span><span>Live</span></div>
-            <div class="panel-row"><span>User Info</span><span>Live</span></div>
-            <div class="panel-row"><span>Server Info</span><span>Live</span></div>
-            <div class="panel-row"><span>Say Command</span><span>Live</span></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container about-grid" style="margin-top: 40px;">
-        <div class="about-panel reveal-up">
-          <div class="panel-glass">
-            <div class="panel-row"><span>COMING SOON</span><span>Planned</span></div>
-            <div class="panel-row"><span>AI Assistant</span><span>In progress</span></div>
-            <div class="panel-row"><span>Moderation</span><span>Planned</span></div>
-            <div class="panel-row"><span>Reminders</span><span>Planned</span></div>
-            <div class="panel-row"><span>Polls</span><span>Planned</span></div>
-            <div class="panel-row"><span>Dashboard</span><span>Planned</span></div>
-            <div class="panel-row"><span>Study Tools</span><span>Planned</span></div>
-          </div>
-        </div>
-        <div class="about-copy reveal-up">
-          <p>Priorities may shift as development continues and feedback comes in from testing servers. This list reflects current direction, not a fixed release schedule.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== FAQ ===================== -->
-    <section class="section" id="docs-faq">
-      <div class="container container-narrow">
-        <p class="eyebrow reveal-up">QUESTIONS</p>
-        <h2 class="section-title reveal-up">Frequently asked</h2>
-
-        <div class="accordion reveal-up">
-          <div class="accordion-item">
-            <h3>
-              <button class="accordion-trigger" aria-expanded="false" aria-controls="docs-faq-1">
-                Is Vox free?
-                <span class="accordion-icon" aria-hidden="true"></span>
-              </button>
-            </h3>
-            <div class="accordion-panel" id="docs-faq-1" role="region">
-              <p>Yes. Vox is free to invite and use. It's currently a development build, so features and stability are still evolving, but there's no cost to try it.</p>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h3>
-              <button class="accordion-trigger" aria-expanded="false" aria-controls="docs-faq-2">
-                How do I report bugs?
-                <span class="accordion-icon" aria-hidden="true"></span>
-              </button>
-            </h3>
-            <div class="accordion-panel" id="docs-faq-2" role="region">
-              <p>Join the <a href="https://discord.gg/snDa7PP2mR" target="_blank" rel="noopener noreferrer">support server</a> and describe what happened, including the command used and any error message shown. Reports go directly to the developer.</p>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h3>
-              <button class="accordion-trigger" aria-expanded="false" aria-controls="docs-faq-3">
-                Will more commands be added?
-                <span class="accordion-icon" aria-hidden="true"></span>
-              </button>
-            </h3>
-            <div class="accordion-panel" id="docs-faq-3" role="region">
-              <p>Yes. The Commands section above reflects the current, early set. Additional commands are being built as part of the roadmap and will appear here as they ship.</p>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h3>
-              <button class="accordion-trigger" aria-expanded="false" aria-controls="docs-faq-4">
-                Is my data stored?
-                <span class="accordion-icon" aria-hidden="true"></span>
-              </button>
-            </h3>
-            <div class="accordion-panel" id="docs-faq-4" role="region">
-              <p>Only what's required for Vox to operate — server configuration, command metadata, and moderation-related logs where applicable. See the <a href="privacy.html">Privacy Policy</a> for full detail.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== SUPPORT ===================== -->
-    <section class="section section-about">
-      <div class="container container-narrow">
-        <p class="eyebrow reveal-up">SUPPORT</p>
-        <h2 class="section-title reveal-up">Need help?</h2>
-        <div class="legal-section reveal-up">
-          <p>For setup questions, bug reports, or anything else related to Vox, reach out through the support server.</p>
-          <p><strong>Support Server:</strong> <a href="https://discord.gg/snDa7PP2mR" target="_blank" rel="noopener noreferrer">https://discord.gg/snDa7PP2mR</a></p>
-          <p><strong>Developer:</strong> knife4love</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== STATUS BANNER ===================== -->
-    <section class="section cta-section">
-      <div class="container cta-inner reveal-up">
-        <p class="eyebrow" style="margin: 0;">VOX // SYSTEMS OPERATIONAL</p>
-      </div>
-    </section>
-
   </main>
 
-  <!-- ===================== FOOTER ===================== -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="brand">
-          <svg class="brand-wave" viewBox="0 0 60 24" width="30" height="12" aria-hidden="true">
-            <polyline points="0,12 8,12 12,3 17,21 22,12 28,12 33,6 38,18 43,12 60,12" />
-          </svg>
-          <span>VOX</span>
-        </a>
-        <p>Advanced AI assistant for Discord.</p>
-      </div>
-
-      <nav class="footer-links" aria-label="Footer">
-        <a href="index.html">Home</a>
-        <a href="terms.html">Terms</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="https://discord.gg/snDa7PP2mR" target="_blank" rel="noopener noreferrer">Support</a>
-      </nav>
-
-      <div class="footer-social">
-        <a href="#" aria-label="Vox on GitHub" class="social-icon">
-          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11 11 0 0 1 6 0C17.3 5 18.3 5.3 18.3 5.3c.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5z"/></svg>
-        </a>
-        <a href="https://discord.gg/snDa7PP2mR" aria-label="Vox on Discord" class="social-icon" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20.3 4.4A19.7 19.7 0 0 0 15.4 3c-.2.4-.5.9-.7 1.4a18 18 0 0 0-5.4 0c-.2-.5-.4-1-.7-1.4a19.6 19.6 0 0 0-4.9 1.5C1 8.6.3 12.7.6 16.7a19.8 19.8 0 0 0 5.9 3c.5-.6.9-1.3 1.2-2-.7-.2-1.3-.6-1.9-1 .2-.1.3-.3.5-.4 3.6 1.7 7.6 1.7 11.2 0 .1.1.3.3.5.4-.6.4-1.2.7-1.9 1 .3.7.7 1.4 1.2 2 2.3-.7 4.4-1.7 5.9-3 .4-4.6-.8-8.6-3.4-12.3zM9 14.6c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.9 2.2-1.9 2.2zm6 0c-1 0-1.9-1-1.9-2.2s.8-2.2 1.9-2.2 1.9 1 1.9 2.2-.8 2.2-1.9 2.2z"/></svg>
-        </a>
-      </div>
-    </div>
-
-    <div class="container footer-bottom">
+  <footer class="footer">
+    <div class="container">
       <p>© 2026 Vox. All rights reserved.</p>
+      <p>
+        <a href="terms.html">Terms</a> ·
+        <a href="privacy.html">Privacy</a> ·
+        <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/snDa7PP2mR">Support</a>
+      </p>
     </div>
   </footer>
 
-  <script src="./js/main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
